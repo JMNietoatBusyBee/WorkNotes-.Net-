@@ -1,1 +1,28 @@
 
+
+*Problem with Oracle is the case sensitivity 
+
+     protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Product>()
+                .ToTable("PRODUCT")
+                .HasKey(p => p.ProductId);
+
+            modelBuilder.Entity<Product>()
+                .Property(p => p.ProductId)
+                .HasColumnName("PRODUCTID");
+
+            modelBuilder.Entity<Product>()
+                .Property(p => p.Name)
+                .HasColumnName("NAME");
+
+            modelBuilder.Entity<Product>()
+                .Property(p => p.Description)
+                .HasColumnName("DESCRIPTION");
+
+            modelBuilder.Entity<Product>()
+                .Property(p => p.Price)
+                .HasColumnName("PRICE"); 
+        }
