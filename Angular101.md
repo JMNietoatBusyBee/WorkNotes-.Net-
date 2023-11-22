@@ -1,6 +1,9 @@
 Angular101
 
 written with typescript
+css
+html 
+
 node.js & npm
 Angular Dev tool
 
@@ -31,3 +34,9 @@ then binding on button as you can see (click)
 
 
 ![image](https://github.com/JMNietoatBusyBee/WorkNotes-.Net-/assets/151013941/724c2a41-7fa0-405d-99fb-03f5846073bd)
+
+
+Standalone components
+
+--- need to import all the modules to work independently 
+
